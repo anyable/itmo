@@ -53,10 +53,7 @@ public class Main {
       {
         System.out.print(" ");
       }
-      else if (Double.isNaN(mtx[i][0]))
-      {
-        System.out.print("  ");
-      }
+
       System.out.printf("%.2f", mtx[i][0]);
       for (int j = 1; j < mtx[i].length; ++j)
       {
@@ -64,21 +61,11 @@ public class Main {
         {
           System.out.print(" ");
         }
-        else if (Double.isNaN(mtx[i][j]))
-        {
-          System.out.print("  ");
-        }
+
         System.out.printf(" %.2f", mtx[i][j]);
       }
       System.out.println();
     }
   }
 
-  public static void PrintArr(double arr[])
-  {
-    for (int i = 0; i < arr.length; ++i)
-    {
-      System.out.print(arr[i] + " ");
-    }
-  }
 }
