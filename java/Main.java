@@ -2,14 +2,14 @@ import static java.lang.Math.*;
 public class Main {
   public static void main(String[] args)
   {
-    long t[] = new long[11];
+    long [] t = new long[11];
     int j = 0;
     for (long i = 3; i < 24; i += 2)
     {
       t[j++] = i;
     }
 
-    float x[] = new float[16];
+    float [] x = new float[16];
     float start = -12.0f;
     float end = 2.0f;
     for (int k = 0; k < 16; ++k)
@@ -17,12 +17,12 @@ public class Main {
       x[k] = (float)(Math.random() * (end - start) + start);
     }
 
-    double n[][] = new double[11][16];
+    double [][] n = new double[11][16];
     CalculElement(n, t, x);
     PrintMatrix(n);
   }
 
-  public static void CalculElement(double n[][], long t[], float x[])
+  public static void CalculElement(double [][] n, long  [] t, float [] x)
   {
     for (int i = 0; i < n.length; ++i)
     {
@@ -44,7 +44,7 @@ public class Main {
     }
   }
 
-  public static void PrintMatrix(double mtx[][])
+  public static void PrintMatrix(double [][] mtx)
   {
     int rows = mtx.length;
     for (int i = 0; i < rows; ++i)
@@ -67,5 +67,4 @@ public class Main {
       System.out.println();
     }
   }
-
 }
