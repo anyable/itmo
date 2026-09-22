@@ -4,7 +4,7 @@ public class Main {
   {
     long [] t = new long[11];
     int j = 0;
-    for (long i = 3; i < 24; i += 2)
+    for (long i = 23; i > 2; i -= 2)
     {
       t[j++] = i;
     }
@@ -14,7 +14,7 @@ public class Main {
     float end = 2.0f;
     for (int k = 0; k < 16; ++k)
     {
-      x[k] = (float)(Math.random() * (end - start) + start);
+      x[k] = (float)(random() * (end - start) + start);
     }
 
     double [][] n = new double[11][16];
@@ -22,7 +22,7 @@ public class Main {
     PrintMatrix(n);
   }
 
-  public static void CalculElement(double [][] n, long  [] t, float [] x)
+  public static void CalculElement(double [][] n, long [] t, float [] x)
   {
     for (int i = 0; i < n.length; ++i)
     {
@@ -49,20 +49,10 @@ public class Main {
     int rows = mtx.length;
     for (int i = 0; i < rows; ++i)
     {
-      if (mtx[i][0] > 0)
-      {
-        System.out.print(" ");
-      }
-
-      System.out.printf("%.2f", mtx[i][0]);
+      System.out.printf("%7.2f", mtx[i][0]);
       for (int j = 1; j < mtx[i].length; ++j)
       {
-        if (mtx[i][j] > 0)
-        {
-          System.out.print(" ");
-        }
-
-        System.out.printf(" %.2f", mtx[i][j]);
+        System.out.printf("%7.2f", mtx[i][j]);
       }
       System.out.println();
     }
