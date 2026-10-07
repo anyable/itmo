@@ -1,5 +1,5 @@
 package mypokemon;
-//
+
 import mymove.DragonPulse;
 import ru.ifmo.se.pokemon.Type;
 

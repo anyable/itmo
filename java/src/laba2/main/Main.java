@@ -1,3 +1,4 @@
+package main;
 
 import mypokemon.*;
 import ru.ifmo.se.pokemon.*;
