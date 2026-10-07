@@ -16,3 +16,5 @@ public class Riolu extends Pokemon {
     this.setMove(new LowSweep(), new Bulldoze(), new SwordsDance());
   }
 }
+
+//35

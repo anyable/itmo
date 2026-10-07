@@ -1,5 +1,5 @@
 package mypokemon;
-
+//
 import mymove.DragonPulse;
 import ru.ifmo.se.pokemon.Type;
 
@@ -12,3 +12,4 @@ public final class Lucario extends Riolu {
     this.addMove(new DragonPulse());
   }
 }
+//38

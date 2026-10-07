@@ -17,3 +17,4 @@ public final class Stunfisk extends Pokemon {
     this.setMove(new Facade(), new StoneEdge(), new Swagger(), new Thunder());
   }
 }
+//1

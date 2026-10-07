@@ -11,7 +11,7 @@ public final class Thunderbolt extends SpecialMove {
   }
 
   @Override protected void applyOppEffects(Pokemon p) {
-    if (Math.random() <= 0.1) {
+    if (Math.random() < 0.1) {
       Effect.paralyze(p);
     }
   }

@@ -10,3 +10,5 @@ public final class Raichu extends Pikachu {
     this.addMove(new QuickAttack());
   }
 }
+
+//25

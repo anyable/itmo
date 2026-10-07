@@ -8,8 +8,7 @@ import ru.ifmo.se.pokemon.Stat;
 public final class SwordsDance extends StatusMove {
 
   public SwordsDance() {
-    super();
-    this.type = Type.NORMAL;
+    super(Type.NORMAL, 0, 0);
   }
 
   @Override protected void applySelfEffects(Pokemon p) {

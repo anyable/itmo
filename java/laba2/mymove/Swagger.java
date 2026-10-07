@@ -3,12 +3,15 @@ package mymove;
 import ru.ifmo.se.pokemon.StatusMove;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Stat;
+
+import ru.ifmo.se.pokemon.Type;
+
 import ru.ifmo.se.pokemon.Effect;
 
 public final class Swagger extends StatusMove {
 
   public Swagger() {
-    super();
+    super(Type.NORMAL, 0, 85);
   }
 
   @Override protected void applyOppEffects(Pokemon p) {
